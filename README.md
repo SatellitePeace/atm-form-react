@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Frontend Mentor - Interactive card details form solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+### The challenge
 
-### `npm start`
+Users should be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Fill in the form and see the card details update in real-time
+- Receive error messages when the form is submitted if:
+  - Any input field is empty
+  - The card number, expiry date, or CVC fields are in the wrong format
+- View the optimal layout depending on their device's screen size
+- See hover, active, and focus states for interactive elements on the page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Solution URL: [Solution URL](https://github.com/SatellitePeace/atm-form-react)
+- Live Site URL: [Live site URL](https://atm-card-form.netlify.app/)
 
-### `npm run build`
+## My process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built with
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### What I learned
 
-### `npm run eject`
+I learned a couple of things about refactoring
+I also learned a couple of things about formatting ATM Cards digits
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```React
+<InputField
+            label="CARD NUMBER"
+            type="text"
+            placeholder="e.g 1234 5678 9123 000"
+            value={number}
+            onChange={onAddNumber}
+            error={numberError}
+            errorMessage="Must be between 13 and 19 digits"
+          />
+          etc
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Continued development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project taught me alot about refactoring and thinking outside the box i will have to study how to do both more
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Useful resources
 
-## Learn More
+- [stackoverflow](https://stackoverflow.com/questions/65231352/the-specified-value-cannot-be-parsed-or-is-out-of-range-when-using-number-pipe) - This helped me to solve the problem of how to create spaces after 4 digits in atm cards.
+- [Stackoverflow](https://stackoverflow.com/questions/65454587/how-to-make-autospace-after-every-4-digit-in-react) - This is an amazing article which helped me finally realize that i needed the input type to be text to stop getting a parse error on my range 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/SatellitePeace)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
