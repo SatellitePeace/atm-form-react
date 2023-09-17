@@ -11,12 +11,15 @@
   letter-spacing: 2px;
 }
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("./images/bg-main-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
   font-family: "Space Grotesk", sans-serif;
   min-height: 100vh;
-  margin: 3rem 2rem;
+  margin:1rem 2rem;
   overflow-x: hidden;
 }
 
@@ -124,10 +127,6 @@ input {
   display: flex;
   gap: 1rem;
 }
-/* .mm-yy {
-  display: flex;
-  gap: 1rem;
-} */
 .btn {
   background-image: url("./images/bg-main-mobile.png");
   color: hsl(0, 0%, 100%);
@@ -175,10 +174,10 @@ input {
 /* RESPONSEIVE MEDIA QUERIES */
 @media screen and (min-width: 420px) {
   .front-card > * {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .digits {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 778px) {
@@ -189,7 +188,8 @@ input {
     gap: 3rem;
   }
   body {
-    background-image: url("./images/bg-main-desktop.png");
+    background-image: url("./images/bg-main-desktop.png");background-size: 30vw;
+    background-repeat:repeat-y;
   }
   /* CARDS */
   .cards {
@@ -251,12 +251,14 @@ input {
   body {
     background-image: url("./images/bg-main-desktop.png");
     overflow-y: scroll;
+    background-size: 40vw;
+    background-repeat: repeat-y;
   }
   .App {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     margin: 0 4rem;
   }
   /* CARDS */
@@ -280,7 +282,7 @@ input {
   }
   .cvv {
     top: 43%;
-    left: 55%;
+    left: 78%;
     font-size: 1.4rem;
   }
 
@@ -314,13 +316,6 @@ input {
   .success-modal {
     margin-top: 5rem;
   }
-  /* ERROR STATES */
-  /* .mm-yy-container {
-        flex: 1.9;
-      }
-      .cvv-input {
-        flex: 2;
-      }  */
 }
 
   

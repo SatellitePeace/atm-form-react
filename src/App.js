@@ -42,7 +42,7 @@ function App() {
 
     const fieldsToValidate = [
       { field: name, setError: setNameError },
-      { field: number, setError: setNumberError, minLength: 3 },
+      { field: number, setError: setNumberError, minLength: 13 },
       { field: month, setError: setMonthError, min: 1, max: 12 },
       { field: year, setError: setYearError, min: 23 },
       { field: cvv, setError: setCvvError, minLength: 3 },
